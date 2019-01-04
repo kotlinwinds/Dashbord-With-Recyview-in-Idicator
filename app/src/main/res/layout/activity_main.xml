@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+                android:background="#083f68"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/_20sdp"
+                    android:textColor="#FFFFFF"
+                    android:text="Welcome Karun Kumar "
+                    android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#083f68"
+                    android:orientation="vertical"
+                    android:layout_height="@dimen/_100sdp"
+                    android:id="@+id/linearLayout">
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:background="#083f68"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"/>
+
+                <com.chahinem.pageindicator.PageIndicator
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/circleIndicator"
+                        app:piDotSpacing="@dimen/_6sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:piSelectedColor="#FFF"
+                        app:piDefaultColor="#236bf1"
+                        app:piSize1="@dimen/_5sdp"
+                        app:piSize2="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="#083f68"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rectangal_corn"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout2"
+                    android:orientation="vertical">
+
+                <!--1st Row-->
+                <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:background="@mipmap/ic_nearby_partner_list_bg"
+                        android:layout_height="@dimen/_100sdp">
+
+                    <TextView
+                            android:layout_marginTop="@dimen/_18sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="My Current Month Earnings"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_16sdp"
+                            android:id="@+id/tv_current_month_earnings"/>
+
+                    <TextView
+                            android:layout_below="@+id/tv_current_month_earnings"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 26,563"
+                            android:textStyle="bold"
+                            android:textColor="#16b5f9"
+                            android:textSize="@dimen/_18sdp"
+                            android:id="@+id/tv1_price"/>
+
+                    <TextView
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_below="@+id/tv1_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="My Previous Month Earning"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12sdp"
+                            android:id="@+id/tv_my_previous_month_earnings"/>
+
+                    <TextView
+                            android:layout_toRightOf="@+id/tv_my_previous_month_earnings"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_below="@+id/tv1_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="₹ 20,534"
+                            android:textStyle="bold"
+                            android:textColor="#24baff"
+                            android:textSize="@dimen/_12sdp"
+                            android:id="@+id/tv_previous_price"/>
+
+
+                    <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_play_circle"
+                            android:layout_width="47dp"
+                            android:layout_height="31dp"
+                            android:id="@+id/imageView"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_alignBottom="@+id/tv1_price"/>
+                </RelativeLayout>
+
+                <!--2nd Row-->
+                <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:background="@mipmap/ic_nearby_partner_list_bg"
+                        android:layout_height="@dimen/_100sdp">
+
+                    <TextView
+                            android:layout_marginTop="@dimen/_18sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="Pending Service Charge From Partners"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp"
+                            android:id="@+id/tv_pending_service_Partners"/>
+
+                    <TextView
+                            android:layout_below="@+id/tv_pending_service_Partners"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 58,832"
+                            android:textStyle="bold"
+                            android:textColor="#16b5f9"
+                            android:textSize="@dimen/_18sdp"
+                            android:id="@+id/tv2_price"/>
+
+                    <TextView
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_below="@+id/tv2_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="Last Collected Date"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12sdp"
+                            android:id="@+id/tv_last_collected_date"/>
+
+                    <TextView
+                            android:layout_toRightOf="@+id/tv_last_collected_date"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_below="@+id/tv2_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="03-13-2018"
+                            android:textStyle="bold"
+                            android:textColor="#24baff"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_play_circle"
+                            android:layout_width="47dp"
+                            android:layout_height="31dp"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_alignBottom="@+id/tv2_price"/>
+                </RelativeLayout>
+
+                <!--3rd Row-->
+                <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:background="@mipmap/ic_nearby_partner_list_bg"
+                        android:layout_height="@dimen/_100sdp">
+
+                    <TextView
+                            android:layout_marginTop="@dimen/_18sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="Pending Service Charge to Branch"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp"
+                            android:id="@+id/tv_pending_service_branch"/>
+
+                    <TextView
+                            android:layout_below="@+id/tv_pending_service_branch"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 98,832"
+                            android:textStyle="bold"
+                            android:textColor="#16b5f9"
+                            android:textSize="@dimen/_18sdp"
+                            android:id="@+id/tv3_price"/>
+
+                    <TextView
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_below="@+id/tv3_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="Last Collected Date"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12sdp"
+                            android:id="@+id/tv_branch_date"/>
+
+                    <TextView
+                            android:layout_toRightOf="@+id/tv_branch_date"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_below="@+id/tv3_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="03-13-2018"
+                            android:textStyle="bold"
+                            android:textColor="#24baff"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_play_circle"
+                            android:layout_width="47dp"
+                            android:layout_height="31dp"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_alignBottom="@+id/tv3_price"/>
+                </RelativeLayout>
+
+                <!--4th Row-->
+                <RelativeLayout
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:background="@mipmap/ic_nearby_partner_list_bg"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:layout_marginTop="@dimen/_18sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="Total Partners"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp"
+                            android:id="@+id/tv_total"/>
+
+                    <TextView
+                            android:layout_below="@+id/tv_total"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:text="98,832"
+                            android:textStyle="bold"
+                            android:textColor="#16b5f9"
+                            android:textSize="@dimen/_18sdp"
+                            android:id="@+id/tv4_partners"/>
+
+
+                    <LinearLayout
+                             android:layout_marginBottom="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_below="@+id/tv4_partners"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                                    android:id="@+id/tv_1"
+                                    android:drawableLeft="@drawable/ic_circle_pending"
+                                    android:text="   Pending"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <TextView
+                                    android:layout_toRightOf="@+id/tv_1"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:id="@+id/tv_pending_value"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:text="8,679"
+                                    android:textColor="#08a9ff"
+                                    android:layout_height="wrap_content"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+
+                            <TextView
+                                    android:id="@+id/tv_11"
+                                    android:drawableLeft="@drawable/ic_circle_approved"
+                                    android:text="  Approved"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <TextView
+                                    android:layout_toRightOf="@+id/tv_11"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:id="@+id/tv_approved_value"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:text="62,567"
+                                    android:textColor="#08a9ff"
+                                    android:layout_height="wrap_content"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                            <TextView
+                                    android:id="@+id/tv_111"
+                                    android:drawableLeft="@drawable/ic_circle_rejected"
+                                    android:text="  Rejected"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            <TextView
+                                    android:layout_toRightOf="@+id/tv_111"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:id="@+id/tv_rejected_value"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:text="15,743"
+                                    android:textColor="#08a9ff"
+                                    android:layout_height="wrap_content"/>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <lecho.lib.hellocharts.view.PieChartView
+                      android:layout_alignParentRight="true"
+                      android:id="@+id/chart"
+                      android:src="@drawable/ic_circle_pending"
+                      android:layout_width="@dimen/_150sdp"
+                      android:layout_height="@dimen/_150sdp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:labelVisibilityMode="labeled"
+            app:itemHorizontalTranslationEnabled="false"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/navigation"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+</android.support.constraint.ConstraintLayout>
