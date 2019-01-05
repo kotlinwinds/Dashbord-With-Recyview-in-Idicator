@@ -3,4 +3,5 @@
     <color name="colorPrimary">#083f68</color>
     <color name="colorPrimaryDark">#072d4f</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="dashboard_color">#083f68</color>
 </resources>

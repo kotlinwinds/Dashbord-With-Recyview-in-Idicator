@@ -11,9 +11,8 @@
             android:layout_height="match_parent">
 
 
-
         <LinearLayout
-                android:background="#083f68"
+                android:background="@color/dashboard_color"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -25,33 +24,26 @@
                     android:textColor="#FFFFFF"
                     android:text="Welcome Karun Kumar "
                     android:layout_width="match_parent"
-                      android:layout_height="wrap_content"/>
-
+                    android:layout_height="wrap_content"/>
             <LinearLayout
+                    android:id="@+id/lll"
                     android:layout_width="match_parent"
-                    android:background="#083f68"
+                    android:background="@color/dashboard_color"
                     android:orientation="vertical"
-                    android:layout_height="@dimen/_100sdp"
-                    android:id="@+id/linearLayout">
-                <android.support.v7.widget.RecyclerView
-                        android:id="@+id/recyclerView"
-                        android:background="#083f68"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_90sdp"/>
+                    android:layout_height="@dimen/_95sdp">
 
-                <com.chahinem.pageindicator.PageIndicator
-                        android:layout_gravity="center_horizontal"
-                        android:id="@+id/circleIndicator"
-                        app:piDotSpacing="@dimen/_6sdp"
+                <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"/>
+
+                <LinearLayout
+                        android:id="@+id/layoutDots"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:piSelectedColor="#FFF"
-                        app:piDefaultColor="#236bf1"
-                        app:piSize1="@dimen/_5sdp"
-                        app:piSize2="@dimen/_5sdp"
-                        android:layout_marginBottom="@dimen/_5sdp"
-                        android:background="#083f68"/>
-
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical"/>
             </LinearLayout>
 
             <LinearLayout
@@ -290,7 +282,7 @@
 
 
                     <LinearLayout
-                             android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
                             android:padding="@dimen/_5sdp"
                             android:layout_width="wrap_content"
                             android:layout_below="@+id/tv4_partners"
@@ -301,7 +293,7 @@
                         <RelativeLayout
                                 android:padding="@dimen/_5sdp"
                                 android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content">
+                                android:layout_height="wrap_content">
 
 
                             <TextView
@@ -327,7 +319,7 @@
                         <RelativeLayout
                                 android:padding="@dimen/_5sdp"
                                 android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content">
+                                android:layout_height="wrap_content">
 
 
                             <TextView
@@ -380,11 +372,11 @@
                     </LinearLayout>
 
                     <lecho.lib.hellocharts.view.PieChartView
-                      android:layout_alignParentRight="true"
-                      android:id="@+id/chart"
-                      android:src="@drawable/ic_circle_pending"
-                      android:layout_width="@dimen/_150sdp"
-                      android:layout_height="@dimen/_150sdp" />
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/chart"
+                            android:src="@drawable/ic_circle_pending"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_150sdp"/>
 
 
                 </RelativeLayout>
